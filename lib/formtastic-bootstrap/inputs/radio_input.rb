@@ -11,7 +11,7 @@ module FormtasticBootstrap
           label_html <<
           collection.map { |choice|
             choice_html(choice)
-          }.join("\n").html_safe
+          }.push(hint_html).join("\n").html_safe
         end
       end
 
